@@ -19,3 +19,8 @@ void TorrentDownloader::on_actionAbout_TorrentDownloader_triggered()
     AboutTorrentDownloader *about = new AboutTorrentDownloader();
     about->exec();
 }
+
+void TorrentDownloader::on_actionOpen_triggered()
+{
+    ui->listWidget->addItem("Hello");
+}

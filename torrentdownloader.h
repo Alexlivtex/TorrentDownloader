@@ -18,6 +18,8 @@ public:
 private slots:
     void on_actionAbout_TorrentDownloader_triggered();
 
+    void on_actionOpen_triggered();
+
 private:
     Ui::TorrentDownloader *ui;
 };

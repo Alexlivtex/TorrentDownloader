@@ -7,20 +7,20 @@
     <x>0</x>
     <y>0</y>
     <width>1072</width>
-    <height>601</height>
+    <height>586</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>TorrentDownloader</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QListView" name="listView">
+   <widget class="QListWidget" name="listWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>341</width>
-      <height>501</height>
+      <width>291</width>
+      <height>491</height>
      </rect>
     </property>
    </widget>
@@ -73,9 +73,6 @@
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionOpen">
-   <property name="checkable">
-    <bool>true</bool>
-   </property>
    <property name="icon">
     <iconset resource="Resource/resource.qrc">
      <normaloff>:/Image/images/open.png</normaloff>:/Image/images/open.png</iconset>
