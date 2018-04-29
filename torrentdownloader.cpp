@@ -1,6 +1,7 @@
 #include "torrentdownloader.h"
 #include "ui_torrentdownloader.h"
 #include "abouttorrentdownloader.h"
+#include "downloadingitem.h"
 
 TorrentDownloader::TorrentDownloader(QWidget *parent) :
     QMainWindow(parent),
@@ -22,5 +23,15 @@ void TorrentDownloader::on_actionAbout_TorrentDownloader_triggered()
 
 void TorrentDownloader::on_actionOpen_triggered()
 {
-    ui->listWidget->addItem("Hello");
+    //ui->listWidget->addItem("Hello");
+    QListWidgetItem *listItem = new QListWidgetItem(ui->listWidget);
+
+    ui->listWidget->addItem(listItem);
+
+    DownloadingItem *item = new DownloadingItem();
+
+    listItem->setSizeHint(item->sizeHint());
+
+    ui->listWidget->setItemWidget(listItem, item);
+
 }

@@ -26,15 +26,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         torrentdownloader.cpp \
-    abouttorrentdownloader.cpp
+    abouttorrentdownloader.cpp \
+    downloadingitem.cpp
 
 HEADERS += \
         torrentdownloader.h \
-    abouttorrentdownloader.h
+    abouttorrentdownloader.h \
+    downloadingitem.h
 
 FORMS += \
         torrentdownloader.ui \
-    abouttorrentdownloader.ui
+    abouttorrentdownloader.ui \
+    downloadingitem.ui
 
 RESOURCES += \
     Resource/resource.qrc
